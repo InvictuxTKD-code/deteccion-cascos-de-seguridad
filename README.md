@@ -54,25 +54,7 @@ Se recomienda enfáticamente el uso de un **entorno virtual** para aislar las de
 
 ---
 
-## ☁️ Despliegue
-
-Este proyecto está configurado para un despliegue sencillo en servicios de cloud como **AWS**, **Heroku** o **Streamlit Community Cloud**.
-
-> **Nota Importante:** Asegúrate de incluir el archivo del modelo entrenado (`best.pt` o equivalente) en el directorio raíz antes de realizar el despliegue.
-
----
-
 ## 👥 Autores
 
-Desarrollado por:
-
-* **Andrés Jaramillo**
-* **Max Delgado**
-
-SafetyAI Solutions © 2025.
-Este proyecto está listo para ser desplegado en servicios como AWS, Heroku o Streamlit Community Cloud. Asegúrate de incluir el archivo best.pt en el directorio raíz.
-
-👥 Autores
-
 Desarrollado por Andrés Jaramillo y Max Delgado.
-SafetyAI Solutions © 2025.
+Sentinel © 2025.
