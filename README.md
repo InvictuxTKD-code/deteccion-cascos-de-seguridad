@@ -25,6 +25,25 @@
 
 ---
 
+## 🧠 Entrenamiento del Modelo
+
+El núcleo de Sentinel es un modelo de visión por computadora personalizado. El proceso de creación del dataset y entrenamiento siguió una metodología rigurosa para asegurar la precisión en la detección:
+
+1.  **Recolección y Balanceo de Datos:**
+    * Se recopiló un conjunto de imágenes centrado en entornos industriales.
+    * Para evitar sesgos en el modelo, se realizó un **balanceo de clases exacto (50/50)**.
+    * El dataset inicial consta de **130 imágenes** distribuidas equitativamente:
+        * 👷 **65 imágenes** etiquetadas como `helmet` (con casco).
+        * ⚠️ **65 imágenes** etiquetadas como `no-helmet` (sin casco).
+
+2.  **Etiquetado y Preprocesamiento:**
+    * Cada imagen fue inspeccionada y etiquetada manualmente utilizando la plataforma **[Roboflow](https://roboflow.com/)**, asegurando *bounding boxes* precisos para cada objeto.
+    * Se generó un dataset estructurado y normalizado listo para ser ingerido por el algoritmo.
+
+3.  **Entrenamiento:**
+    * Se utilizó este dataset curado para realizar un *fine-tuning* sobre el modelo base YOLOv8.
+    * **Resultados:** El modelo final demostró métricas de rendimiento muy favorables, logrando una alta confianza tanto en la detección de cumplimiento como de incumplimiento de la norma de seguridad.
+
 ## 📦 Instalación y Uso Local
 
 Se recomienda enfáticamente el uso de un **entorno virtual** para aislar las dependencias del proyecto.
